@@ -54,7 +54,7 @@ To replicate this project, ensure the following Python libraries are installed:
 | **DBSCAN**        | -0.53            |
 
 #### Clustering Results with PCA:
-![Clustering with PCA](results.png)
+![Clustering with PCA](result.png)
 
 These results highlight the impact of scaling and dimensionality reduction on clustering effectiveness.
 
