@@ -31,28 +31,34 @@ To replicate this project, ensure the following Python libraries are installed:
 - `matplotlib`
 - `sklearn`
 
-Install dependencies using:
-```bash
-pip install -r requirements.txt
-
-
 ## Key Insights and Results
 
 ### Key Insights:
 - **K-Means** and **Agglomerative Clustering** perform well in PCA space.
 - **DBSCAN** struggled with meaningful clustering in PCA-reduced space.
+- 
+### Clustering Performance Across Different Scalers:
 
-### Results
-#### Clustering Performance Across Different Scalers:
-![Clustering Results Table](results.png)
+| Clustering Method | StandardScaler | MinMaxScaler | Normalizer |
+|--------------------|----------------|--------------|------------|
+| **K-Means**       | 0.10           | 0.17         | **0.77**   |
+| **Agglomerative** | 0.21           | 0.25         | **0.75**   |
+| **DBSCAN**        | -1.00          | **0.27**     | -1.00      |
 
-- **Clustering Method Performance (Silhouette Scores)**:
-  - **K-Means**: Highest performance with Normalizer.
-  - **Agglomerative Clustering**: Consistent performance with both Normalizer and MinMaxScaler.
-  - **DBSCAN**: Performs poorly with most scalers.
+### Clustering Results with PCA:
+
+| Clustering Method | Silhouette Score |
+|--------------------|------------------|
+| **K-Means**       | 0.65             |
+| **Agglomerative** | 0.66             |
+| **DBSCAN**        | -0.53            |
 
 #### Clustering Results with PCA:
 ![Clustering with PCA](results.png)
 
 These results highlight the impact of scaling and dimensionality reduction on clustering effectiveness.
+
+### Install dependencies using:
+```bash
+pip install -r requirements.txt
 
