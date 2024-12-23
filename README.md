@@ -10,9 +10,6 @@ This repository contains a comprehensive analysis and clustering project using m
   - [2. Clustering Analysis](#2-clustering-analysis)
   - [3. Dimensionality Reduction and Visualization](#3-dimensionality-reduction-and-visualization)
 - [Results](#results)
-- [Usage](#usage)
-- [License](#license)
-
 ## Dataset
 The dataset used is the **Forest Fire** dataset. It includes meteorological and forest attributes to predict and cluster fire incidents.  
 - **Source**: [Forest Fire Dataset](https://archive.ics.uci.edu/ml/datasets/Forest+Fires)
